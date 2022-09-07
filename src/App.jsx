@@ -1,8 +1,13 @@
+import HolaMundo from "./HolaMundo";
+import TituloPrincipal from "./TituloPrincipal";
 
 function App() {
+  let mes = 9;
   return (
     <div>
-      <h1>Titulo principal</h1>
+      {/* Los componentes se pueden escribir con etiquetas simples o dobles */}
+     <TituloPrincipal comision="c7i" mes={mes} /> 
+     <HolaMundo/>
     </div>
   );
 }
