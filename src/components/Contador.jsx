@@ -1,14 +1,22 @@
 import { useState } from "react";
 
-const contador = () => {
-    let [count, setCount] = useState(10);
+const Contador = () => {
+    //Creacion del state
+    //let [nombreDelEstado, nombreDeFuncionQueActulizaElState] = useState(IndicarElValorInicial)
+    let [counter, setCounter] = useState(10);
+    //counter = 10 esto no se puede hacer
+    //setcounter(10) Asi se modifica el state
+
+    const sumar = () => {
+        setCounter(counter + 1);
+    }
     return (
         <div>
             <h2>Contador</h2>
-            <h3>{count}</h3>
-            <button>+1</button>
+            <h3>{counter}</h3>
+            <button onClick={sumar}>+1</button>
         </div>
     );
 };
 
-export default contador;
+export default Contador;
